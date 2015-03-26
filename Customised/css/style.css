@@ -10,9 +10,7 @@ a {
 ::selection {
 	background: #f7981d;
 }
-
-//::selection pseudo-element was apparently dropped from CSS 3 and does not pass the validation.*/
-
+// ::selection pseudo-element was apparently dropped from CSS3 and does not pass validation */
 
 a:hover {
 	color: #f7981d;
@@ -23,6 +21,16 @@ a:hover {
 	color: #bbb;
 }
 
+.container {
+	box-shadow: 0 0 5px 0 black;
+	-webkit-box-shadow: 0 0 5px 0 black;
+	-moz-box-shadow: 0 0 5px 0 black;
+	-o-box-shadow: 0 0 5px 0 black;
+}
+
+.sub-title {
+	margin: 10px 0 5px 15px;
+}
 
 /* h1, h2, h3 and h4, supposedly should follow the one line syntax of "font" that is follows:
 style variant weight size/line-height family, ect. 
@@ -84,10 +92,6 @@ img {
 
 /* Portfolio Start */
 
-.portfolio-title {
-	margin: 10px 0 5px 15px;
-}
-
 .portfolio-item {
 	margin-bottom: 30px;
 }
@@ -126,29 +130,16 @@ img {
 	border: none;
 }
 
-.modal button {
-	position: absolute;
-	right: 13px;
-	margin: 0;
-	border: 2px solid #bbb;
-	color: #979797;
-	font-weight: bold;
-	box-shadow: 1px 1px 2px #bbb;
-	-webkit-box-shadow: 1px 1px 2px #bbb;
-	-moz-box-shadow: 1px 1px 2px #bbb;
-	-o-box-shadow: 1px 1px 2px #bbb;
+.modal .close {
+	float: right;
 }
 
-.modal button:hover {
-	border: 2px solid #979797;
-	background: #f7981d;
-	box-shadow: -1px -1px 2px #bbb;
-	-webkit-box-shadow: -1px -1px 2px #bbb;
-	-moz-box-shadow: -1px -1px 2px #bbb;
-	-o-box-shadow: -1px -1px 2px #bbb;
-	transition: background 0.2s ease-in;
-	-webkit-transition: background 0.2s ease-in;
-	-moz-transition: background 0.2s ease-in;
+.modal .close:hover {
+	color: #f7981d;
+	cursor: pointer;
+	transition: color 0.2s ease-in;
+	-webkit-transition: color 0.2s ease-in;
+	-moz-transition: color 0.2s ease-in;
 	-o-transition: background 0.2s ease-in;
 
 }
@@ -166,6 +157,14 @@ img {
 
 /* Modal End */
 
+/* FAQ Start */
+
+.panel-title,
+.panel-body {
+	margin: 0 15px 0 15px;
+}
+
+/* FAQ End */
 
 @media only screen and (max-width: 750px) {
 
