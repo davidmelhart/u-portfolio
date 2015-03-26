@@ -1,1 +1,1 @@
-/* Default build according to the Udacity guidelines and handout */
+/* Customised version of the Udacity task */
